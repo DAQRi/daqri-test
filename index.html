@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DAQRi Location</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f5f7fa;
+    }
+    h1 {
+      color: #1e3a5f;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    button {
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #2b6cb0;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>DAQRi</h1>
+  <p>Welcome to this location</p>
+
+  <div class="card">
+    <h2>Penguin Exhibit</h2>
+    <p>Tap below to explore</p>
+
+    <button onclick="openMap()">Open Map</button>
+    <button onclick="openStreetView()">Street View</button>
+  </div>
+
+  <script>
+    function openMap() {
+      window.location.href = "https://www.google.com/maps?q=40.7678,-73.9718";
+    }
+
+    function openStreetView() {
+      window.location.href = "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=40.7678,-73.9718";
+    }
+  </script>
+
+</body>
+</html>
+
